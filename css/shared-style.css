@@ -47,3 +47,19 @@ nav .active {
 .flex-column {
   flex-direction: column;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  padding: 10px;
+}
