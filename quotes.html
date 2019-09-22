@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favourite Quotes</title>
+    <link rel="stylesheet" href="shared-style.css" />
+    <style>
+      #quote::before {
+        content: '"And He will provide him from (sources) he never could imagine. And whosoever puts his trust in Allah, then He will suffice him. Verily, Allah will accomplish his purpose. Indeed Allah has set a measure for all things. - Quran[Surah Talaq:3]"';
+        animation: quotes 10s ease infinite;
+      }
+      @keyframes quotes {
+        0% {
+          content: '"And He will provide him from (sources) he never could imagine. And whosoever puts his trust in Allah, then He will suffice him. Verily, Allah will accomplish his purpose. Indeed Allah has set a measure for all things. - Quran[Surah Talaq:3]"';
+        }
+        50% {
+          content: '"Unquestionably, [for] the allies of Allah there will be no fear concerning them, nor will they grieve Those who believed and were fearing Allah For them are good tidings in the worldly life and in the Hereafter.No change is there in the words of Allah. That is what is the greatattainment." - Quran[Surah Yunus:62-64] ';
+        }
+        100% {
+          background-color: '"So which of the favors of your Lord would you deny?" Quran[Suran Ar-Rahman:13]';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="navigation-bar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="quotes.html">Quotes</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+      <blockquote id="quote"></blockquote>
+    </div>
+  </body>
+</html>

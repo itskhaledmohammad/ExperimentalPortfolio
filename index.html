@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" href="shared-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="navigation-bar">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+      <h1 id="welcome-arabic">اهلا وسهلا</h1>
+      <header class="hero">
+        <h1>Khaled!</h1>
+      </header>
+    </div>
+    <!-- <script>
+      const hero = document.querySelector(".hero");
+      const text = hero.querySelector("h1");
+      const walk = 20;
+
+      function shadow(e) {
+        const { offsetWidth: width, offsetHeight: height } = hero;
+        let { offsetX: x, offsetY: y } = e;
+        console.log(x, y);
+
+        // This is a workaround, as x and y are from child
+        if (this !== e.target) {
+          x = x + e.target.offsetLeft;
+          y = y + e.target.offsetTop;
+        }
+
+        const xWalk = Math.round((x / width) * walk - walk / 2);
+        const yWalk = Math.round((y / height) * walk - walk / 2);
+
+        text.style.textShadow = `
+              ${xWalk}px ${yWalk}px 0 rgba(255, 0, 255, 0.7),
+              ${xWalk * -1}px ${yWalk}px 0 rgba(0, 255, 255, 0.7),
+              ${yWalk}px ${xWalk * -1}px 0 rgba(0, 255, 0, 0.7),
+              ${yWalk * -1}px ${xWalk}px 0 rgba(255, 0, 255, 0.7)
+              `;
+      }
+
+      hero.addEventListener("mousemove", shadow);
+    </script> -->
+  </body>
+</html>

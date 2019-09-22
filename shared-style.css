@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+#navigation-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#navigation-bar ul {
+  display: flex;
+  width: auto;
+}
+
+#navigation-bar ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 0 10px;
+}
