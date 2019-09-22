@@ -8,6 +8,7 @@
 nav {
   background: black;
   position: fixed;
+  z-index: 9999;
 }
 nav a {
   text-decoration: none;
@@ -40,7 +41,7 @@ nav .active {
 .flex-center {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .flex-column {
