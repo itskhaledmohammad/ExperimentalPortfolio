@@ -23,10 +23,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         
         .box {
             width: 500px;
-            height: 200px;
+            height: 300px;
             padding: 10px;
             margin: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .box h1 {
             margin-bottom: 5px;
@@ -56,17 +60,45 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background: #4D9D64;
 }
 .orange-card{
-  border-color: #e22209;
-  background: #ea5035;
+  border-color: #b8220e;
+  background: #dd5d21;
 }
 .blue-card{
   border-color: #284153;
   background: #375972;
 }
-
+#hobbies {
+    font-size: 25px;
+}
 #list-hobbies {
     list-style: none;
 }
+.social-media {
+    height: 26px;
+}
+.social-media a {
+    color: white;
+    margin: 5px;
+    transition: all ease 0.25s;
+}
+
+.social-media a:hover, i:hover{
+    font-size: 25px;
+    transition: all ease 0.25s;
+}
+
+#fav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+#fav-links a:hover {
+    text-decoration: underline;
+}
+
 
 
     </style>
@@ -90,6 +122,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             Engineering.
           </p>
           <p>
+              I try to share useful information, you can find me on socialmedia.
+              <br>
               Find me on 👀: 
               <div class="social-media">
                 <a href="https://www.facebook.com/itskhaledmohammad" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -111,8 +145,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         </div>
         <div id="fav-links" class="box card green-card">
                 <h1>Some cool awesome links 👌🏻:</h1> 
-                <a href="http://www.quranmazid.com/" target="_blank">Quran Mazid (A web application to read Quran)</a>
-                <a href="http://ihadis.com/" target="_blank">iHadis (For reading Hadiths with the authenticity of the chain)</a>
+                <a href="http://www.quranmazid.com/" target="_blank">Quran Mazid</a>
+                <a href="http://ihadis.com/" target="_blank">iHadis</a>
                 <a href="https://www.reddit.com/r/SoftwareEngineering/" target="_blank">Software Enginnering Sub Reddit</a>
         </div>
         <section class="second-row flex-center">
